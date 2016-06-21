@@ -1,4 +1,4 @@
-package test.java;
+package code1;
 
 public class RemoveDuplicates {
 	public static void removeDuplicates(int[] a){

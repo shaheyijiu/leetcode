@@ -1,4 +1,4 @@
-package test.java;
+package code1;
 
 public class NextPermutation {
 	public void nextPermutation(int nums[]){

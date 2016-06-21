@@ -1,4 +1,4 @@
-package test.java;
+package code1;
 /**
  * 有重复值的二叉搜索
  * @author Administrator

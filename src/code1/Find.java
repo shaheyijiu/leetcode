@@ -1,4 +1,4 @@
-package test.java;
+package code1;
 
 public class Find {
 	public static void main(String[] args){

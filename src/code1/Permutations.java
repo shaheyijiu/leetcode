@@ -1,4 +1,4 @@
-package test.java;
+package code1;
 
 import java.util.ArrayList;
 
@@ -12,9 +12,10 @@ import java.util.ArrayList;
  * @author Administrator
  *
  */
-public class PermutationsII {
+public class Permutations {
 	
 	public void permutation(int nums[]){
+		ArrayList<Integer> result = new ArrayList<Integer>();
 		ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
 		ArrayList<Integer> path = new ArrayList<>();
 		permute(nums,0,path,ans);
@@ -34,26 +35,15 @@ public class PermutationsII {
 			return;
 			
 		}
-		if(start >= 1 && nums[start] == nums[start-1]){
+		for(int i = 0;i <= start;i++){
 			ArrayList<Integer> list = new ArrayList<>(path);
-			list.add(list.size(),nums[start]);
-			//System.out.println("s");
+			list.add(i,nums[start]);
 			permute(nums,start+1,list,ans);
-			
-		} else {
-			for(int i = 0;i <= start;i++){
-				ArrayList<Integer> list = new ArrayList<>(path);
-				list.add(i,nums[start]);
-				//System.out.println("y");
-				permute(nums,start+1,list,ans);
-			}
 		}
-		
 	}
 	public static void main(String[] args){
-		PermutationsII p = new PermutationsII();
-		int a[] = {1,1,2};
+		Permutations p = new Permutations();
+		int a[] = {1,2,3};
 		p.permutation(a);
 	}
 }
-

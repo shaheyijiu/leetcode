@@ -1,4 +1,4 @@
-package test.java;
+package code1;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;

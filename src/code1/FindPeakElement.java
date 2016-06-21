@@ -1,4 +1,4 @@
-package test.java;
+package code1;
 
 public class FindPeakElement {
 	public void findPeakElement(int[] nums){

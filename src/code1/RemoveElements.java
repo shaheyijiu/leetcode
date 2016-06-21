@@ -1,4 +1,4 @@
-package test.java;
+package code1;
 
 public class RemoveElements {
 	public static void removeElement(int a[],int value){

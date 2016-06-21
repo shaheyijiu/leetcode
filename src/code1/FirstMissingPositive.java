@@ -1,4 +1,4 @@
-package test.java;
+package code1;
 
 public class FirstMissingPositive {
 	public static int getFirstMissingPositive(int a[],int length){
